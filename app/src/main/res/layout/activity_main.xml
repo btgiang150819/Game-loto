@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:textAllCaps="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textColor="#E61313"
+        android:textSize="25sp"
+        android:text="Game loto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+
+        android:maxLength="3"
+        android:inputType="number"
+        android:id="@+id/a"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:hint="Nhập A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:imeOptions="actionDone"
+        android:maxLength="3"
+        android:inputType="number"
+        android:id="@+id/b"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:hint="Nhập B"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:textAllCaps="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/range"
+        android:text="Range"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:textAllCaps="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/reset"
+        android:text="Reset"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:textAllCaps="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/random"
+        android:text="Random"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:id="@+id/result"
+        android:textColor="#E61313"
+        android:textSize="25sp"
+        android:text="123"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
