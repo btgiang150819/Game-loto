@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#97E8F3"
     tools:context=".MainActivity">
 
     <TextView
@@ -16,57 +17,110 @@
         android:text="Game loto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
-    <EditText
 
+    <EditText
         android:maxLength="3"
         android:inputType="number"
         android:id="@+id/a"
         android:layout_marginTop="10dp"
         android:textSize="25sp"
-        android:hint="Nhập A"
+        android:hint="Nhập số bắt đầu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
     <EditText
-        android:imeOptions="actionDone"
         android:maxLength="3"
         android:inputType="number"
         android:id="@+id/b"
         android:layout_marginTop="10dp"
         android:textSize="25sp"
-        android:hint="Nhập B"
+        android:hint="Nhập số kết thúc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-    <Button
-        android:textAllCaps="true"
+    <EditText
+
+        android:maxLength="3"
+        android:inputType="number"
+        android:id="@+id/c"
         android:layout_marginTop="10dp"
-        android:id="@+id/range"
-        android:text="Range"
-        android:layout_gravity="center_horizontal"
-        android:layout_width="wrap_content"
+        android:textSize="25sp"
+        android:hint="Nhập số bạn chọn"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-    <Button
-        android:textAllCaps="true"
+    <EditText
+        android:maxLength="3"
+        android:inputType="number"
+        android:id="@+id/point"
         android:layout_marginTop="10dp"
-        android:id="@+id/reset"
-        android:text="Reset"
-        android:layout_gravity="center_horizontal"
-        android:layout_width="wrap_content"
+        android:textSize="25sp"
+        android:hint="Nhập số điểm bạn đặt cược"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-    <Button
-        android:textAllCaps="true"
+    <LinearLayout
         android:layout_marginTop="10dp"
-        android:id="@+id/random"
-        android:text="Random"
-        android:layout_gravity="center_horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="25sp"
+            android:text="Điểm của bạn : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/score"
+            android:textColor="#DF0B0B"
+            android:textSize="25sp"
+            android:text="100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:textAllCaps="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/range"
+            android:text="Range"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true"
+            android:textAllCaps="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/reset"
+            android:text="Reset"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_centerInParent="true"
+            android:id="@+id/random"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="Random"
+            android:textAllCaps="true" />
+    </RelativeLayout>
+
     <TextView
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
         android:id="@+id/result"
-        android:textColor="#E61313"
-        android:textSize="25sp"
-        android:text="123"
+        android:textColor="#F30F3D"
+        android:textSize="15sp"
+        android:text="Danh sách số đã xuất hiện"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
